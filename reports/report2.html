@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>웹사이트 만들기</title>
+  <style>
+  p{
+    font-weight:bold;
+    background-color:lightblue;
+    width: 800px;
+    padding-left: 10px;
+  }
+  div{margin-bottom: 5px;}
+  div>span{
+    display: inline-block;
+    margin-left:8px;
+    text-align:right;
+    width:130px;
+    padding-right:8px;
+  }
+  div>strong{
+    color:red;
+  }
+  .formbox{
+    margin-left: 6px;
+  }
+  </style>
+</head>
+<body>
+<h2>취업 정보 계정 만들기</h2>
+<p style="background:none; color:red; font-size:10pt;">* 필수 입력 항목</p>
+
+<form>
+
+<p>기본 정보</p>
+  <div><span>이름</span><strong>*</strong>
+    <input type="text" name="usr_name" size="8"></div>
+  <div><span>이메일</span><strong>*</strong>
+    <input type="email" name="email" placeholder="id@domain_name" size="15"></div>
+  <div><span>암호</span><strong>*</strong>
+    <input type="password" name="pwd" size="12"></div>
+  <div><span>암호 확인</span><strong>*</strong>
+    <input type="password" name="re_pwd" size="13"></div>
+  <div><span>모바일 폰</span><strong>*</strong>
+    <input type="tel" name="phone" placeholder="010-0000-0000"></div>
+  <div><span>개인 홈페이지</span>
+    <input class="formbox" type="url" name="home" placeholder="http://" size="30"></div>
+  <div><span>주소</span><strong>*</strong>
+    <input type="text" name="address" size="30"></div>
+
+<p>학 력</p>
+
+  <div><span>학교 명</span><strong>*</strong>
+    <input type="text" name="school_name" size="12"></div>
+  <div><span>전 공</span><strong>*</strong>
+    <input type="text" name="major" size="12"></div>
+  <div><span>졸업 여부</span><strong>*</strong>
+    <select name="status">
+      <option value="0">---선택---</option>
+      <option value="1">졸업 예정</option>
+      <option value="2">졸 업</option>
+    </select></div>
+  <div><span>졸업(예정)일</span>
+    <input class="formbox" type="date" name="grad_yr"> </div>
+
+<p>업무 경력</p>
+  <div><span>근무업체명</span>
+    <input class="formbox" type="text" name="co" size="20"> </div>
+  <div><span>전공</span>
+    <input class="formbox" type="text" name="title" size="10"></div>
+  <div><span>담당 업무</span>
+    <textarea class="formbox" cols="80" rows="10" name="duty">이전 업체에서 담당한 업무를 기술하시오.</textarea></div>
+  <div><span>근무년수</span>
+    <input class="formbox" type="number" name="year" min="0" max="10" step="0.5">년</div>
+
+<p>자기소개서</p>
+  <div><span>첨부 파일</span>
+    <input class="formbox" type="file" name="attach"></div>
+  <div style="margin-left: 200px">
+    <input type="submit" value="제 출"> <input type="reset" value="재작성"></div>
+
+</form>
+</body>
+</html>
