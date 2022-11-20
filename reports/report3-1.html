@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function bintodeci(binary){
+          var value = 0;
+          var n = binary.length
+          for(var i = n-1; i >=0 ; i--){
+           if (binary[i]==1) {
+               value += (2**(n-i-1));
+           }
+          }
+          return decitohexa(value);
+        }
+
+        function decitohexa(decimal){
+          var list = ['0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'];
+          var value = '';
+          while(decimal > 0){
+              value = list[decimal % 16] + value;
+              decimal = parseInt(decimal/ 16);
+          }
+          document.write('<p> 2진수 값 : '+ num + '</p>')
+          document.write('<p> 16진수 값 : ' + value + '</p>');
+        }
+    </script>
+</head>
+<body>
+<h2> 2진수를 입력받아 16진수로 출력 </h2>
+<hr>
+<script>
+    var num = prompt("2진수를 입력하세요");
+    bintodeci(num);
+
+</script>
+</body>
+</html>

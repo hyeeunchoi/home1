@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function new_row (prev_row) {
+            var pascal = [];
+            for (var i = 0; i < prev_row; i++) {
+                pascal [i] = [i + 1];
+                for (var j = 0; j < i + 1; j++) {
+                    if (j == 0 || j == i) {
+                        pascal[i][j] = 1;
+                    }
+                    else {
+                        pascal[i][j] = pascal[i - 1][j - 1] + pascal[i - 1][j];
+                        document.write(pascal);
+                    }
+                }
+            }
+
+            return pascal;
+
+        }
+    </script>
+</head>
+<body>
+<h2>파스칼 삼각형</h2>
+<hr>
+<script>
+    var number = prompt("파스칼의 삼각형의 높이 : ");
+    new_row(number);
+</script>
+</body>
+</html>
