@@ -703,6 +703,31 @@ section {
   color: #fff;
 }
 
+.services .iconbox-black i {
+  color: black;
+}
+
+.services .iconbox-black:hover .icon {
+  background: black;
+}
+
+.services .iconbox-black:hover .icon i {
+  color: #fff;
+}
+
+.services .iconbox-green i {
+  color: green;
+}
+
+.services .iconbox-green:hover .icon {
+  background: green;
+}
+
+.services .iconbox-green:hover .icon i {
+  color: #fff;
+}
+
+
 /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
