@@ -766,19 +766,19 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Testimonials
+# testimonials
 --------------------------------------------------------------*/
 .testimonials .testimonials-carousel,
 .testimonials .testimonials-slider {
   overflow: hidden;
 }
 
-.testimonials .testimonial-item {
+.testimonials .testimonials-item {
   box-sizing: content-box;
   min-height: 320px;
 }
 
-.testimonials .testimonial-item .testimonial-img {
+.testimonials .testimonials-item .testimonials-img {
   width: 200px; height: 300px;
   border-radius: 0%;
   margin: -40px 0 0 40px;
@@ -787,39 +787,39 @@ section {
   border: 6px solid #fff;
 }
 
-.testimonials .testimonial-item h3 {
+.testimonials .testimonials-item h3 {
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 45px;
   color: #111;
 }
 
-.testimonials .testimonial-item h4 {
+.testimonials .testimonials-item h4 {
   font-size: 14px;
   color: #999;
   margin: 0 0 0 45px;
 }
 
-.testimonials .testimonial-item .quote-icon-left,
-.testimonials .testimonial-item .quote-icon-right {
+.testimonials .testimonials-item .quote-icon-left,
+.testimonials .testimonials-item .quote-icon-right {
   color: #ffe7a0;
   font-size: 26px;
 }
 
-.testimonials .testimonial-item .quote-icon-left {
+.testimonials .testimonials-item .quote-icon-left {
   display: inline-block;
   left: -5px;
   position: relative;
 }
 
-.testimonials .testimonial-item .quote-icon-right {
+.testimonials .testimonials-item .quote-icon-right {
   display: inline-block;
   right: -5px;
   position: relative;
   top: 10px;
 }
 
-.testimonials .testimonial-item p {
+.testimonials .testimonials-item p {
   font-style: italic;
   margin: 0 15px 0 15px;
   padding: 20px 20px 60px 20px;
@@ -891,6 +891,8 @@ section {
   position: relative;
   top: 0;
   transition: all 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+  width: 350px;
+  height: 350px;
 }
 
 .portfolio .portfolio-item .portfolio-info {
